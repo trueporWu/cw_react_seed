@@ -26,7 +26,17 @@ module.exports = {
     plugins: [
         new webpack.optimize.UglifyJsPlugin({
             compress: {
-                warning: false
+                warnings: false
+            }
+        }),
+
+        //在最新的React(V15)里，应该会出现如下的警告：
+        // Warning: It looks like you're using a minified copy of the development build of React. When deploying React apps to production, make sure to use the production build which skips development warnings and is faster. See https://fb.me/react-minification for more details.
+        // 增加如下的配置,去掉这个警告
+        // 详情参考:https://github.com/facebook/react/issues/6479
+        new webpack.DefinePlugin({
+            "process.env": {
+                NODE_ENV: JSON.stringify("production")
             }
         })
     ]
