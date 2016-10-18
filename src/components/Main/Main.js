@@ -12,6 +12,7 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
 import DatePicker from 'material-ui/DatePicker';
+import Publisher from '../Publisher/Publisher';
 
 /**
  * 样式
@@ -98,7 +99,9 @@ class Main extends Component{
         return (
             <MuiThemeProvider muiTheme={muiTheme}>
                 <div style={styles.container}>
-
+                    <div>
+                        <Publisher />
+                    </div>
                     <Dialog
                         open={this.state.open}
                         title="Super Secret Password"
