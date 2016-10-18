@@ -3,7 +3,7 @@
 # cygwin 软件安装
 强烈建议在windows环境中安装[cygwin](http://www.cygwin.cn/)软件
 # Webpack配置react的开发环境
-[Webpack](http://webpack.github.io/) 是一个前端资源加载\/打包工具，只需要相对简单的配置就可以提供前端工程化需要的各种功能，并且如果有需要它还可以被整合到其他比如 Grunt \/ Gulp 的工作流。
+[Webpack](http://webpack.github.io/) 是一个前端资源加载,打包工具，只需要相对简单的配置就可以提供前端工程化需要的各种功能，并且如果有需要它还可以被整合到其他比如 Grunt或Gulp 的工作流。
 
 * __安装WebPack :__ `npm install -g webpack`
 
