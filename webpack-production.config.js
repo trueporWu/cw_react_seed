@@ -3,7 +3,6 @@
  * 编译生成生产环境文件的配置
  */
 
-
 const webpack = require('webpack'); // webpack
 const path = require('path'); // 路径操作
 const buildPath = path.resolve(__dirname, 'build'); // 打包之后文件存放的目录
@@ -18,7 +17,7 @@ const config = {
     // 输出编译文件的配置
     output: {
         path: buildPath, // 输出路径
-        filename: 'app.js', // 输出文件的名称
+        filename: 'app.js' // 输出文件的名称
     },
 
     plugins: [
@@ -54,3 +53,5 @@ const config = {
         ]
     }
 };
+
+module.exports = config;

@@ -4,7 +4,7 @@
   "description": "cw react project seed.",
   "scripts": {
     "start": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
-    "build": "webpack --config webpack-production.config.js  --progress --colors"
+    "build": "webpack --config webpack-production.config.js --display-error-detail  --progress --colors"
   },
   "repository": {
     "type": "git",
